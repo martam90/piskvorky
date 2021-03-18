@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -71,7 +73,7 @@ p {
   padding: 2rem 1rem;
 }
 
-/* buttons */ 
+/* buttons */
 
 .cta {
   display: block;
