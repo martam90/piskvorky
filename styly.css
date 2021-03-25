@@ -17,6 +17,7 @@ body {
   background-image: linear-gradient(to bottom, #615dad, #ffc8da);
   background-repeat: no-repeat;
   border: 1px solid #615dad;
+  height: 100%;
 }
 
 :root {
@@ -26,6 +27,7 @@ body {
   --hover-green: #1cbb96;
   --blue: #0197f6;
   --hover-blue: #0090e9;
+  --focus: #4D3A4D;
 }
 
 h1 {
@@ -39,7 +41,7 @@ a {
 }
 
 :focus {
-  outline: 2px dotted var(--primary-color);
+  outline: 2px dotted var(--focus);
 }
 
 p {
