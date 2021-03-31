@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   background-image: linear-gradient(to bottom, #615dad, #ffc8da);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 :root {
