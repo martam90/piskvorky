@@ -57,7 +57,7 @@ p {
   text-align: center;
 }
 
-@media (min-width: 25em) {
+@media (min-width: 27em) {
   .container {
     width: 25rem;
   }
@@ -116,7 +116,7 @@ p {
   padding: 1rem 0;
 }
 
-.cta--rules:hover {
+:is(.cta--rules:hover, .cta--main:hover) {
   background-color: var(--hover-green);
 }
 
