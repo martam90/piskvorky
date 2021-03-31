@@ -26,7 +26,7 @@ body {
   --hover-green: #1cbb96;
   --blue: #0197f6;
   --hover-blue: #0090e9;
-  --focus: #4D3A4D;
+  --focus: #aa0a17;
 }
 
 h1 {
@@ -39,19 +39,6 @@ a {
   text-decoration: none;
 }
 
-ol {
-  margin: 0;
-  padding-top: 3em;
-}
-
-figure {
-  margin: 0;
-  padding-top: 2.5em;
-}
-
-figcaption {
-  padding-top: 0.8em;
-}
 
 :focus {
   outline: 2px dotted var(--focus);
@@ -66,13 +53,25 @@ p {
 
 .container {
   margin: 4rem auto;
-  width: 21rem;
+  width: 20rem;
   text-align: center;
 }
 
-@media (min-width: 31.25em) {
+@media (min-width: 25em) {
   .container {
     width: 25rem;
+  }
+} 
+
+@media (min-width: 40em) {
+  .container__rules {
+    width: 40rem;
+  }
+
+  .container__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1.25rem;
   }
 }
 
@@ -95,6 +94,13 @@ p {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.img__cross, .img__circle {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+  vertical-align: -0.1em;
+}
+
 /* buttons */
 
 .cta {
@@ -104,7 +110,7 @@ p {
   color: var(--primary-color);
 }
 
-.cta--rules {
+:is(.cta--rules, .cta--main) {
   background-color: var(--green);
   transition: background 250ms ease-in-out;
   padding: 1rem 0;
@@ -125,12 +131,16 @@ p {
   background-color: var(--hover-blue);
 }
 
+/* images and images description */
 
-.img__cross, .img__circle {
-  width: 1em;
-  height: 1em;
-  filter: invert(100%);
-  vertical-align: -0.1em;
+figure {
+  margin: 0;
+  padding-top: 2.5rem;
+}
+
+figcaption {
+  padding-top: 0.8rem;
+  font-style: italic;
 }
 
 .img__instruction {
@@ -138,8 +148,15 @@ p {
   width: 100%;
 }
 
+/* ordered list */
+
+.list {
+  margin: 0;
+  padding-top: 3rem;
+}
+
 .list__item {
-  padding-bottom: 1.25em;
-  padding-left: 0.9em;
+  padding-bottom: 1.25rem;
+  padding-left: 0.9rem;
   text-align: left;
 }
