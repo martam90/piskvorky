@@ -27,12 +27,21 @@ body {
   --blue: #0197f6;
   --hover-blue: #0090e9;
   --focus: #aa0a17;
+  --btn-color: #BAB0D6;
+  --btn-border: #283E50;
+  --btn-hover: #D5C8E1;
 }
 
-h1 {
+.heading {
   font-family: 'Lobster', cursive;
   font-size: 2.5em;
   margin: 0;
+}
+
+.heading--white {
+  color: var(--primary-color);
+  font-size: clamp(2.5em, 10vw, 4em);
+  text-align: center;
 }
 
 a {
@@ -42,6 +51,7 @@ a {
 
 :focus {
   outline: 2px dotted var(--focus);
+  z-index: 99;
 }
 
 p {
@@ -159,4 +169,33 @@ figcaption {
   padding-bottom: 1.25rem;
   padding-left: 0.9rem;
   text-align: left;
+}
+
+.content {
+  max-width: 80vmin;
+}
+
+.content__text {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: clamp(2em, 5vw, 3em);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
+}
+
+.btn {
+  background-color:var(--btn-color);
+  padding: 0;
+  border: 1px solid var(--btn-border);
+  transition: background 250ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  cursor: pointer;
 }
