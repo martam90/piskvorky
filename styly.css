@@ -125,25 +125,36 @@ p {
   color: var(--primary-color);
 }
 
-:is(.cta--rules, .cta--main) {
+.cta--green {
   background-color: var(--green);
   transition: background 250ms ease-in-out;
   padding: 1rem 0;
 }
 
-:is(.cta--rules:hover, .cta--main:hover) {
+.cta--green:hover {
   background-color: var(--hover-green);
 }
 
-.cta--start {
+.cta--blue {
   background-color: var(--blue);
   border-top: 1px solid var(--dark-blue);
   transition: background 250ms ease-in-out;
   padding: 1rem 0;
 }
 
-.cta--start:hover {
+.cta--blue:hover {
   background-color: var(--hover-blue);
+}
+
+.cta--home {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.cta--restart {
+  border-top: 0;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 
 /* images and images description */
@@ -176,6 +187,8 @@ figcaption {
   text-align: left;
 }
 
+/* board styles*/
+
 .board {
   max-width: 80vmin;
   margin: 3rem auto;
@@ -185,12 +198,18 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 0;
 }
 
 .content__info--left {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
+}
+
+.content__info--right {
+  display: flex;
+  gap: 1rem;
 }
 
 .content__text {
@@ -200,12 +219,12 @@ figcaption {
   padding-top: 0;
 }
 
-
+/* playing board */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(10, 50px);
-  grid-template-rows: repeat(10, 50px);
+  grid-template-columns: repeat(10, 2.84rem);
+  grid-template-rows: repeat(10, 2.84rem);
 }
 
 .btn {
