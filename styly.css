@@ -148,13 +148,13 @@ p {
 }
 
 .cta--home {
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
 .cta--restart {
   border-top: 0;
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
@@ -202,16 +202,13 @@ figcaption {
   padding: 2rem 0;
 }
 
-.content__info--left {
+.content__info--left,
+.content__info--right {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.content__info--right {
-  display: flex;
-  gap: 0.5rem;
-}
 
 .content__text {
   text-transform: uppercase;
