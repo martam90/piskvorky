@@ -27,18 +27,17 @@ body {
   --blue: #0197f6;
   --hover-blue: #0090e9;
   --focus: #aa0a17;
-  --btn-color: #BAB0D6;
-  --btn-border: #283E50;
-  --btn-hover: #D5C8E1;
+  --btn-color: #bab0d6;
+  --btn-border: #283e50;
+  --btn-hover: #d5c8e1;
 }
 
 .heading {
   font-family: 'Lobster', cursive;
   font-size: 2.5em;
-  margin: 0;;
+  margin: 0;
   letter-spacing: 2px;
 }
-
 
 .heading--white {
   color: var(--primary-color);
@@ -49,7 +48,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 :focus {
   outline: 2px dotted var(--focus);
@@ -73,7 +71,7 @@ p {
   .container {
     width: 25rem;
   }
-} 
+}
 
 @media (min-width: 40em) {
   .container__rules {
@@ -106,7 +104,8 @@ p {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.img__cross, .img__circle {
+.img__cross,
+.img__circle {
   width: 1em;
   height: 1em;
   filter: invert(100%);
@@ -230,7 +229,7 @@ figcaption {
 }
 
 .btn {
-  background-color:var(--btn-color);
+  background-color: var(--btn-color);
   padding: 0;
   width: 8vmin;
   height: 8vmin;
