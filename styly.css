@@ -27,7 +27,6 @@ body {
   --blue: #0197f6;
   --hover-blue: #0090e9;
   --focus: #aa0a17;
-  --btn-color: #bab0d6;
   --btn-border: #283e50;
   --btn-hover: #d5c8e1;
 }
@@ -149,13 +148,13 @@ p {
 
 .cta--home {
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 .cta--restart {
   border-top: 0;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 /* images and images description */
@@ -223,10 +222,11 @@ figcaption {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
+  border: 1px solid var(--btn-border);
 }
 
 .btn {
-  background-color: var(--btn-color);
+  background-color: inherit;
   padding: 0;
   width: 8vmin;
   height: 8vmin;
