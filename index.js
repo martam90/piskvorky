@@ -25,9 +25,7 @@ for (let button of buttons) {
       playerCircle.classList.add('active');
       playerCross.classList.add('active');
       isPlaying = 'cross'; 
-    } 
-
-    else if (isPlaying === 'cross') {
+    } else if (isPlaying === 'cross') {
       let cross = document.createElement('img');
       cross.src = 'images/cross.svg';
       cross.className = 'cross--black';
