@@ -21,6 +21,7 @@ for (let button of buttons) {
       circle.src = 'images/circle.svg';
       circle.className = 'circle--black';
       button.appendChild(circle);
+      button.setAttribute('disabled', true);
       playerCircle.classList.add('active');
       playerCross.classList.add('active');
       isPlaying = 'cross'; 
@@ -31,6 +32,7 @@ for (let button of buttons) {
       cross.src = 'images/cross.svg';
       cross.className = 'cross--black';
       button.appendChild(cross);
+      button.setAttribute('disabled', true);
       playerCircle.classList.remove('active');
       playerCross.classList.remove('active');
       isPlaying = 'circle'; 
