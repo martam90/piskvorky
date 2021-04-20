@@ -114,6 +114,14 @@ p {
 .cross--black,
 .circle--black {
   filter: invert(0);
+  animation-name: scaling;
+  animation-duration: 0.15s;
+}
+
+@keyframes scaling {
+  0% {transform: scale(0.5)}
+  50% {transform: scale(1)}
+  100% {transform: scale(1.2)}
 }
 
 .cross--large {
