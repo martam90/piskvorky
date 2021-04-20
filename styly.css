@@ -111,10 +111,30 @@ p {
   vertical-align: -0.1em;
 }
 
+.cross--black,
+.circle--black {
+  filter: invert(0);
+}
+
+.cross--large {
+  display: none;
+  width: 2em;
+  height: 2em;
+}
+
+.cross--large.active {
+  display: block;
+}
+
 .circle--large {
   width: 2em;
   height: 2em;
 }
+
+.circle--large.active {
+  display: none;
+}
+
 
 /* buttons */
 
