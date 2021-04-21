@@ -111,19 +111,6 @@ p {
   vertical-align: -0.1em;
 }
 
-.cross--black,
-.circle--black {
-  filter: invert(0);
-  animation-name: scaling;
-  animation-duration: 0.15s;
-}
-
-@keyframes scaling {
-  0% {transform: scale(0.5)}
-  50% {transform: scale(1)}
-  100% {transform: scale(1.2)}
-}
-
 .cross--large {
   display: none;
   width: 2em;
@@ -135,14 +122,36 @@ p {
 }
 
 .circle--large {
+  display: none;
   width: 2em;
   height: 2em;
 }
 
 .circle--large.active {
-  display: none;
+  display: block;
 }
 
+.btn {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.board__field--circle {
+  background-image: url('images/circle.svg');
+  animation-name: scaling;
+  animation-duration: 0.15s;
+}
+
+.board__field--cross {
+  background-image: url('images/cross.svg');
+  animation-name: scaling;
+  animation-duration: 0.15s;
+} 
+
+@keyframes scaling {
+  0% {background-size: 0}
+  100% {background-size: 60%}
+}
 
 /* buttons */
 
