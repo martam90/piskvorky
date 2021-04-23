@@ -42,6 +42,7 @@ body {
   color: var(--primary-color);
   font-size: clamp(2.5em, 10vw, 4em);
   text-align: center;
+  font-weight: 400;
 }
 
 a {
@@ -131,18 +132,13 @@ p {
   display: block;
 }
 
-.btn {
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.board__field--circle {
+.btn.board__field--circle {
   background-image: url('images/circle.svg');
   animation-name: scaling;
   animation-duration: 0.15s;
 }
 
-.board__field--cross {
+.btn.board__field--cross {
   background-image: url('images/cross.svg');
   animation-name: scaling;
   animation-duration: 0.15s;
@@ -263,6 +259,8 @@ figcaption {
 }
 
 .btn {
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: inherit;
   padding: 0;
   width: 8vmin;
